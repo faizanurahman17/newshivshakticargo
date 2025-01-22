@@ -128,5 +128,8 @@ a{
     position: absolute;
     bottom: 0;
     border: 1px #000 dashed;
-    display: ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
 }
