@@ -40,17 +40,25 @@ a{
     top: 0;
     z-index: 1;
 }
+.head{
+    padding: 0 20px;
+    justify-content: space-between; 
+}
 .heading{
     font-family: "Ribeye Marrow";
     font-size: 40px;
     color: #fff;
 }
 .btns-holder{
+    position: absolute;
+    top: 50%;
+    left: 65%;
     padding: 10px;
     background: transparent;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    transform: translateY(-50%);
 }
 .btns{
     margin: 0 20px;
@@ -74,7 +82,7 @@ a{
     background: #D9D9D920;
     position: absolute;
     top: 150PX;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     z-index: 0;
 }
 .mobNum{
@@ -84,7 +92,7 @@ a{
     width: fit-content;
     background: #FCE874;
     font-size: 2rem;
-    border: 1px #000 solid;
+    /* border: 1px #000 solid; */
     padding: 10px;
     border-radius: 50px;
     transform: rotate(-10deg);
@@ -127,18 +135,19 @@ a{
     width: calc(100% - 80px);
     position: absolute;
     bottom: 0;
-    border: 1px #000 dashed;
+    /* border: 1px #000 dashed; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    background: linear-gradient(-45deg,#0a58ea76,#ffffffad,#e8b6ff51);
 }
 .texts1,.texts2{
     width: 50%;
     height: 100%;
-    border: #000 1px solid;
+    /* border: #000 1px solid; */
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     flex-direction: column;
     padding: 20px;
@@ -146,7 +155,22 @@ a{
 .texts1{
     align-items: start;
     font-family: 'Roboto';
-    font-size: 96px;
+    font-size: 80px;
     font-weight: 900;
-    
+    letter-spacing: 10px;
+    text-shadow: 2px 2px 2.5px #00000080; 
+}
+.texts2{
+    font-family: 'cursive';
+    font-size: 18px;
+}
+.shakti{
+    color: #7181E4;
+    /* -webkit-text-stroke: 2px #000; */
+    /* height: auto; */
+    text-shadow: 
+    1px 1px 0 black, /* Right-Bottom */
+   -1px 1px 0 black, /* Left-Bottom */
+    1px -1px 0 black, /* Right-Top */
+   -1px -1px 0 black; /* Left-Top */
 }
