@@ -133,3 +133,20 @@ a{
     align-items: center;
     flex-direction: row;
 }
+.texts1,.texts2{
+    width: 50%;
+    height: 100%;
+    border: #000 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.texts1{
+    align-items: start;
+    font-family: 'Roboto';
+    font-size: 96px;
+    font-weight: 900;
+    
+}
