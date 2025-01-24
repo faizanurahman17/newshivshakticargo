@@ -223,15 +223,15 @@ a{
     background-size: contain;
 }
 .train{
-    background-image: url('/real-train.png');
+    background-image: url('real-train.png');
 }
 .truck{
-    background-image: url('/real-truck.png');
+    background-image: url('real-truck.png');
 }
 .plain{
     width: 600px;
     height: 600px;
-    background-image: url('/cargo-n-plain.png');
+    background-image: url('cargo-n-plain.png');
 }
 /* .address1 a,.address2 a{
     animation: blink2 .25s linear infinite;
