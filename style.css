@@ -68,11 +68,11 @@ a{
     transform: translateY(-50%);
 }
 .btns{
-    margin: 0 5px;
+    margin: 0 10px;
     color: #fff;
     transition: all .5s ease-in;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -168,7 +168,7 @@ a{
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    background: linear-gradient(-45deg,#0a58ea76,#ffffffad,#e8b6ff51);
+    background: linear-gradient(-45deg,#0a58ea76,#ffffffad,#f2fcb35d,#e8b6ff51);
 }
 .texts1,.texts2{
     width: 50%;
@@ -181,9 +181,11 @@ a{
     padding: 20px;
 }
 .texts1{
+    padding: 50px;
     align-items: start;
+    justify-content: center;
     font-family: 'Roboto';
-    font-size: 80px;
+    font-size: 100px;
     font-weight: 900;
     letter-spacing: 10px;
     text-shadow: 2px 2px 2.5px #00000080;
@@ -194,9 +196,14 @@ a{
    -1px -1px 0 #e8e8e8; /* Left-Top */ 
 }
 .texts2{
-    font-family: 'roboto';
+    font-family: 'Courier New', Courier, monospace;
     font-size: 18px;
     font-weight: 600;
+    color: #363d3adb;
+}
+.texts2 span{
+    font-size: 40px;
+    color: #b05f37;
 }
 .shakti{
     color: #7181E4;
@@ -207,4 +214,49 @@ a{
    -1px 1px 0 black, /* Left-Bottom */
     1px -1px 0 black, /* Right-Top */
    -1px -1px 0 black; /* Left-Top */
+}
+.side-icons{
+    width: 150px;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.train{
+    background-image: url('/refs/real-train.png');
+}
+.truck{
+    background-image: url('/refs/real-truck.png');
+}
+.plain{
+    width: 600px;
+    height: 600px;
+    background-image: url('/refs/cargo-n-plain.png');
+}
+/* .address1 a,.address2 a{
+    animation: blink2 .25s linear infinite;
+    transform: all .1s ease-in;
+}
+@keyframes blink2 {
+    0%{
+        color: #000;
+    }50%{
+        color: #ff0000;
+    }100%{
+        color: #000;
+    }
+} */
+ marquee{
+    width: 100%;
+    height: 25px;
+    border-radius: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+ }
+marquee a{
+    border-radius: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
