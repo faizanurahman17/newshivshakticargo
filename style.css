@@ -28,6 +28,9 @@ a{
     justify-content: top;
     flex-direction: column;
 }
+.home-page{
+    background: none;
+}
 .head,.contact-bar{
     display: flex;
     align-items: center;
@@ -39,6 +42,7 @@ a{
     position: fixed;
     top: 0;
     z-index: 1;
+    box-shadow: inset 4px 4px 10px #2870a0c2;
 }
 .head{
     padding: 0 20px;
@@ -48,6 +52,9 @@ a{
     font-family: "Ribeye Marrow";
     font-size: 40px;
     color: #fff;
+}
+.homepage-main{
+    box-shadow: inset 4px 4px 10px #e8e8e8;
 }
 .btns-holder{
     position: absolute;
@@ -61,8 +68,25 @@ a{
     transform: translateY(-50%);
 }
 .btns{
-    margin: 0 20px;
+    margin: 0 5px;
     color: #fff;
+    transition: all .5s ease-in;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+}
+.btns:hover{
+    color: #318BC5;
+    border-radius: 50%;
+    background: #fff;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .btns i{
     font-size: 2em;
@@ -84,6 +108,7 @@ a{
     top: 150PX;
     /* border: 1px solid #000; */
     z-index: 0;
+    box-shadow: inset 4px 4px 10px #e8e8e8;
 }
 .mobNum{
     font-size: 2rem;
@@ -124,6 +149,9 @@ a{
     align-items: start;
     flex-direction: column;
 }
+.address-bar2{
+    align-items: end;
+}
 .address2{
     display: flex;
     justify-content: center;
@@ -158,11 +186,17 @@ a{
     font-size: 80px;
     font-weight: 900;
     letter-spacing: 10px;
-    text-shadow: 2px 2px 2.5px #00000080; 
+    text-shadow: 2px 2px 2.5px #00000080;
+    text-shadow: 
+    1px 1px 0 #e8e8e8, /* Right-Bottom */
+   -1px 1px 0 #e8e8e8, /* Left-Bottom */
+    1px -1px 0 #e8e8e8, /* Right-Top */
+   -1px -1px 0 #e8e8e8; /* Left-Top */ 
 }
 .texts2{
-    font-family: 'cursive';
+    font-family: 'roboto';
     font-size: 18px;
+    font-weight: 600;
 }
 .shakti{
     color: #7181E4;
