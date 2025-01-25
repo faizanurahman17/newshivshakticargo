@@ -53,9 +53,6 @@ a{
     font-size: 40px;
     color: #fff;
 }
-.homepage-main{
-    box-shadow: inset 4px 4px 10px #e8e8e8;
-}
 .btns-holder{
     position: absolute;
     top: 50%;
@@ -105,13 +102,25 @@ a{
 .contact-bar{
     background: #D9D9D920;
     position: absolute;
-    top: 150PX;
+    top: 175PX;
     /* border: 1px solid #000; */
     z-index: 0;
-    box-shadow: inset 4px 4px 10px #e8e8e8;
+    box-shadow: inset 4px 4px 10px #e8e8e8,
+                        4px 4px 10px #e8e8e8;
 }
 .mobNum{
     font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mobNum span{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
 }
 .zmts-cont{
     width: fit-content;
@@ -159,7 +168,7 @@ a{
     flex-direction: column;
 }
 .homepage-main{
-    height: calc(100% - 300px);
+    height: calc(100% - 350px);
     width: calc(100% - 80px);
     position: absolute;
     bottom: 0;
@@ -169,6 +178,8 @@ a{
     align-items: center;
     flex-direction: row;
     background: linear-gradient(-45deg,#0a58ea76,#ffffffad,#f2fcb35d,#e8b6ff51);
+    box-shadow: inset 4px 4px 10px #e8e8e8,
+                        4px 4px 10px #e8e8e8;
 }
 .texts1,.texts2{
     width: 50%;
