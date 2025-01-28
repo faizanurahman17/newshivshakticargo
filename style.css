@@ -67,23 +67,31 @@ a{
 .btns{
     margin: 0 10px;
     color: #fff;
-    transition: all .5s ease-in;
+    transition: all .25s ease-in;
     width: 40px;
     height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-
 }
-.btns:hover{
-    color: #318BC5;
+
+.btns:hover,.onclick-btns{
+    /* color: #318BC5; */
+    color: #fff;
+    mix-blend-mode: screen;
+    transform: scale(1.5);
     border-radius: 50%;
-    background: #fff;
-    
+    /* background: #fff; */
+    /* text-shadow:
+    2px 2px 0 #fff, 
+    -2px 2px 0 #fff,
+    2px -2px 0 #fff,
+   -2px -2px 0 #fff; */
     display: flex;
     justify-content: center;
     align-items: center;
+    text-shadow: 1px 1px #ffffff3d;
 }
 .btns i{
     font-size: 2em;
@@ -180,6 +188,7 @@ a{
     background: linear-gradient(-45deg,#0a58ea76,#ffffffad,#f2fcb35d,#e8b6ff51);
     box-shadow: inset 4px 4px 10px #e8e8e8,
                         4px 4px 10px #e8e8e8;
+    overflow: hidden;
 }
 .texts1,.texts2{
     width: 50%;
@@ -196,9 +205,9 @@ a{
     align-items: start;
     justify-content: center;
     font-family: 'Roboto';
-    font-size: 100px;
-    font-weight: 900;
-    letter-spacing: 10px;
+    font-size: 80px;
+    font-weight: 1000;
+    letter-spacing: 5px;
     text-shadow: 2px 2px 2.5px #00000080;
     text-shadow: 
     1px 1px 0 #e8e8e8, /* Right-Bottom */
